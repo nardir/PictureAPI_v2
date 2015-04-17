@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAClient", "CAClient\CAClie
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AxerrioOnline", "AxerrioOnline\AxerrioOnline.sqlproj", "{137C1F22-4B8F-4AC2-B111-9E5021B09F0A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{442BDB0D-F3BF-42D0-9E3A-3343F127B5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axerrio.Data", "Axerrio.Data\Axerrio.Data.csproj", "{17A0D80B-333E-42BA-B14F-96782226C1F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axerrio.Data.EntityFramework", "Axerrio.Data.EntityFramework\Axerrio.Data.EntityFramework.csproj", "{FB98515C-7577-4998-B71E-73D2337EB91E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,8 +41,20 @@ Global
 		{137C1F22-4B8F-4AC2-B111-9E5021B09F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{137C1F22-4B8F-4AC2-B111-9E5021B09F0A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{137C1F22-4B8F-4AC2-B111-9E5021B09F0A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{17A0D80B-333E-42BA-B14F-96782226C1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A0D80B-333E-42BA-B14F-96782226C1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A0D80B-333E-42BA-B14F-96782226C1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A0D80B-333E-42BA-B14F-96782226C1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB98515C-7577-4998-B71E-73D2337EB91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB98515C-7577-4998-B71E-73D2337EB91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB98515C-7577-4998-B71E-73D2337EB91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB98515C-7577-4998-B71E-73D2337EB91E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17A0D80B-333E-42BA-B14F-96782226C1F5} = {442BDB0D-F3BF-42D0-9E3A-3343F127B5A8}
+		{FB98515C-7577-4998-B71E-73D2337EB91E} = {442BDB0D-F3BF-42D0-9E3A-3343F127B5A8}
 	EndGlobalSection
 EndGlobal
