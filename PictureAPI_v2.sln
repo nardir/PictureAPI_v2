@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axerrio.Data", "Axerrio.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axerrio.Data.EntityFramework", "Axerrio.Data.EntityFramework\Axerrio.Data.EntityFramework.csproj", "{FB98515C-7577-4998-B71E-73D2337EB91E}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "nrtest_aol", "..\..\..\Documents\Visual Studio 2013\Projects\nrtest_aol\nrtest_aol.sqlproj", "{1C8F83EB-C79A-4A31-88D9-3C43D6FABCE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,12 @@ Global
 		{FB98515C-7577-4998-B71E-73D2337EB91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB98515C-7577-4998-B71E-73D2337EB91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB98515C-7577-4998-B71E-73D2337EB91E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8F83EB-C79A-4A31-88D9-3C43D6FABCE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8F83EB-C79A-4A31-88D9-3C43D6FABCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8F83EB-C79A-4A31-88D9-3C43D6FABCE1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1C8F83EB-C79A-4A31-88D9-3C43D6FABCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8F83EB-C79A-4A31-88D9-3C43D6FABCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8F83EB-C79A-4A31-88D9-3C43D6FABCE1}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
