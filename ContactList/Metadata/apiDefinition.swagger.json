@@ -1,0 +1,85 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "ContactList"
+  },
+  "paths": {
+    "/api/v1/contacts": {
+        "get": {
+            "tags": [
+                "Contacts"
+            ],
+            "operationId": "Contacts_GetContacts",
+            "consumes": [ ],
+            "produces": [
+                "application/json",
+                "text/json",
+                "application/xml",
+                "text/xml"
+            ],
+            "responses": {
+                "200": {
+                    "description": "OK",
+                    "schema": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/Contact"
+                        }
+                    }
+                }
+            },
+            "deprecated": false
+        }
+    },
+    "/api/v1/contacts/{id}": {
+      "get": {
+        "tags": [
+          "Article"
+        ],
+        "operationId": "Article_GetContact",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Contact"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "Contact": {
+      "type": "object",
+      "properties": {
+        "Id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "EmailAddress": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
