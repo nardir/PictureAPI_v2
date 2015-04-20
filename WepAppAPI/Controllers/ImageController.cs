@@ -60,16 +60,20 @@ namespace WepAppAPI.Controllers
                         BlobContainerPublicAccessType.Blob
                 });
 
-                var imageStream = new MemoryStream();
-                image.Save(imageStream, ImageFormat.Jpeg);
+                CloudBlockBlob blockBlob = container.GetBlockBlobReference("testimage2.jpg");
+                using (var imageStream = new MemoryStream())
+                { 
+                    image.Save(imageStream, ImageFormat.Jpeg);
+                    imageStream.Position = 0;
 
-                CloudBlockBlob blockBlob = container.GetBlockBlobReference("testimage.jpg");
-                
-                //await blockBlob.UploadFromStreamAsync(imageStream);
+                    //await blockBlob.UploadFromStreamAsync(imageStream);
 
-                using (Stream file = System.IO.File.OpenRead(@"C:\Users\Nardi\Pictures\Screenshots\147_3.jpg"))
-                {
-                    blockBlob.UploadFromStream(file);
+                    //using (Stream file = System.IO.File.OpenRead(@"C:\Users\Nardi\Pictures\Screenshots\147_3.jpg"))
+                    //{
+                    //    blockBlob.UploadFromStream(file);
+                    //}
+
+                    blockBlob.UploadFromStream(imageStream, imageStream.Length);
                 }
 
                 uri = blockBlob.Uri.AbsolutePath;
