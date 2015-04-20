@@ -10,6 +10,10 @@ namespace CATestContactList
     {
         static void Main(string[] args)
         {
+            using (var client = new ContactList())
+            {
+                var contacts = client.Contacts.GetContacts();
+            }
         }
     }
 }
