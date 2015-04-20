@@ -26,6 +26,21 @@ namespace ContactList.Controllers
             return Task.FromResult(contacts.AsEnumerable());
         }
 
+        [Route("")]
+        [HttpPost]
+        public void PostContact(Contact contact)
+        {
+            //if (ModelState.IsValid)
+            if (contact.Id == -1)
+            {
+                contact.Id = 100;
+            }
+            else
+            {
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
+        }
+
         //[Route("{id:int}")]
         //[HttpGet]
         //public HttpResponseMessage GetContact(int Id)
